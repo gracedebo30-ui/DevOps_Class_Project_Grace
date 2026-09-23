@@ -27,14 +27,10 @@
     margin:20px 0 0 0;
     line-height:1.2;
   }
-  /* garis pendek di tengah bawah judul */
-  h1::after{
-    content:"";
-    display:block;
-    width:80px;
-    height:4px;
-    background:#111;
-    margin:6px auto 0;
+  /* garis bawah hanya di huruf "ps" */
+  h1 span{
+    border-bottom:4px solid #111;
+    padding:0 2px 2px;
   }
 
   .box{
@@ -106,17 +102,15 @@
 <body>
 
 <div class="container">
-  <h1>DevOps Blog</h1>
+  <h1>DevO<span>ps</span> Blog</h1>
 
   <div class="box">Start DevOps journey now!</div>
 
   <h2>First Kubernetes Deployment</h2>
 
   <div class="meta">
-    <!-- ikon kalender (solid) -->
     <svg viewBox="0 0 448 512"><path d="M128 0c17.7 0 32 14.3 32 32v32h128V32c0-17.7 14.3-32 32-32s32 14.3 32 32v32h48c26.5 0 48 21.5 48 48v48H0v-48c0-26.5 21.5-48 48-48h48V32c0-17.7 14.3-32 32-32zM0 192h448v272c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192z"/></svg>
     <span>Posted on February 1, 2019 |</span>
-    <!-- ikon user (solid) -->
     <svg viewBox="0 0 448 512"><path d="M224 256a128 128 0 1 0 0-256 128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3 0 498.7 13.3 512 29.7 512h388.6c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304h-91.4z"/></svg>
     <span>Onur Yilmaz</span>
   </div>

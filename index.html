@@ -1,47 +1,129 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>DevOps Blog</title>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Lora:ital@1&display=swap" rel="stylesheet">
 <style>
-body{margin:0;background:#fff;font-family:'Open Sans',Helvetica,Arial,sans-serif;color:#333}
-.container{max-width:700px;margin:0 auto;padding:20px}
-h1{text-align:center;font-size:52px;font-weight:800;margin:80px 0 10px 0;letter-spacing:-1px}
-h1 span{border-bottom:4px solid #333;padding-bottom:3px}
-.box{background:#f8f9fa;border:1px solid #eee;border-radius:4px;padding:20px 22px;font-weight:800;font-size:15px;margin:50px 0 40px 0;color:#333}
-h2{font-size:22px;font-weight:800;margin:0}
-.meta{font-size:12px;color:#999;margin:8px 0 12px 0;display:flex;align-items:center;gap:5px}
-.meta svg{width:13px;height:13px;fill:#999}
-.desc{font-size:14px;color:#555;margin-bottom:12px;line-height:1.5}
-.footer-line{font-size:12px;color:#bbb;display:flex;justify-content:space-between}
-.footer-line a{color:#6cb5d0;text-decoration:none}
-.more{color:#333;font-weight:800;font-size:13px}
+  body{
+    margin:0;
+    background:#fff;
+    font-family:'Open Sans',Helvetica,Arial,sans-serif;
+    color:#444;
+  }
+
+  /* strip abu-abu di atas */
+  .topbar{
+    height:70px;
+    background:#f5f5f5;
+  }
+
+  .container{
+    max-width:1000px;
+    margin:0 auto;
+    padding:0 30px 60px;
+  }
+
+  h1{
+    text-align:center;
+    font-size:72px;
+    font-weight:700;
+    color:#444;
+    margin:40px 0 0 0;
+    letter-spacing:-1px;
+    line-height:1.2;
+  }
+  /* garis pendek di tengah bawah judul */
+  h1::after{
+    content:"";
+    display:block;
+    width:135px;
+    height:3px;
+    background:#444;
+    margin:8px auto 0;
+  }
+
+  .box{
+    background:#f4f4f4;
+    border:1px solid #f0f0f0;
+    border-radius:3px;
+    padding:28px 26px;
+    font-weight:700;
+    font-size:20px;
+    color:#333;
+    margin:50px 0 60px 0;
+  }
+
+  h2{
+    font-size:32px;
+    font-weight:700;
+    color:#333;
+    margin:0 0 10px 0;
+  }
+
+  .meta{
+    font-family:'Lora',Georgia,serif;
+    font-style:italic;
+    font-size:17px;
+    color:#777;
+    margin:0 0 14px 0;
+    display:flex;
+    align-items:center;
+    gap:6px;
+  }
+  .meta svg{width:16px;height:16px;fill:#777;flex:none}
+
+  .desc{
+    font-size:18px;
+    font-weight:400;
+    color:#555;
+    margin-bottom:14px;
+    line-height:1.5;
+  }
+
+  .footer-line{
+    font-size:16px;
+    color:#aaa;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+  }
+  .footer-line a{
+    color:#2196f3;
+    text-decoration:none;
+    margin-left:14px;
+  }
+  .more{color:#333;font-weight:700;font-size:16px}
 </style>
 </head>
 <body>
+
+<div class="topbar"></div>
+
 <div class="container">
-<h1>DevO<span>p</span>s Blog</h1>
+  <h1>DevOps Blog</h1>
 
-<div class="box">Start DevOps journey now!</div>
+  <div class="box">Start DevOps journey now!</div>
 
-<h2>First Kubernetes Deployment</h2>
+  <h2>First Kubernetes Deployment</h2>
 
-<div class="meta">
-<svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zM5 8V6h14v2H5z"/></svg>
-Posted on February 1, 2019 | 
-<svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
-Onur Yilmaz
+  <div class="meta">
+    <!-- ikon kalender (solid) -->
+    <svg viewBox="0 0 448 512"><path d="M128 0c17.7 0 32 14.3 32 32v32h128V32c0-17.7 14.3-32 32-32s32 14.3 32 32v32h48c26.5 0 48 21.5 48 48v48H0v-48c0-26.5 21.5-48 48-48h48V32c0-17.7 14.3-32 32-32zM0 192h448v272c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192z"/></svg>
+    Posted on February 1, 2019 |
+    <!-- ikon user (solid) -->
+    <svg viewBox="0 0 448 512"><path d="M224 256a128 128 0 1 0 0-256 128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3 0 498.7 13.3 512 29.7 512h388.6c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304h-91.4z"/></svg>
+    Onur Yilmaz
+  </div>
+
+  <div class="desc">First application on Kubernetes using Kubernetes deployments</div>
+
+  <div class="footer-line">
+    <div>Tags: <a>#kubernetes</a> <a>#code</a></div>
+    <div class="more">[Read More]</div>
+  </div>
 </div>
 
-<div class="desc">First application on Kubernetes using Kubernetes deployments</div>
-
-<div class="footer-line">
-<div>Tags: <a>#kubernetes</a> <a>#code</a></div>
-<div class="more">[Read More]</div>
-</div>
-
-</div>
 </body>
 </html>

@@ -4,102 +4,106 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>DevOps Blog</title>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Lora:ital@1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&family=Lora&display=swap" rel="stylesheet">
 <style>
   body{
     margin:0;
     background:#fff;
     font-family:'Open Sans',Helvetica,Arial,sans-serif;
-    color:#444;
-  }
-
-  /* strip abu-abu di atas */
-  .topbar{
-    height:70px;
-    background:#f5f5f5;
+    color:#111;
   }
 
   .container{
-    max-width:1000px;
+    max-width:640px;
     margin:0 auto;
-    padding:0 30px 60px;
+    padding:40px 20px 60px;
   }
 
   h1{
     text-align:center;
-    font-size:72px;
-    font-weight:700;
-    color:#444;
-    margin:40px 0 0 0;
-    letter-spacing:-1px;
+    font-size:64px;
+    font-weight:800;
+    color:#111;
+    margin:20px 0 0 0;
     line-height:1.2;
   }
   /* garis pendek di tengah bawah judul */
   h1::after{
     content:"";
     display:block;
-    width:135px;
-    height:3px;
-    background:#444;
-    margin:8px auto 0;
+    width:80px;
+    height:4px;
+    background:#111;
+    margin:6px auto 0;
   }
 
   .box{
-    background:#f4f4f4;
-    border:1px solid #f0f0f0;
-    border-radius:3px;
-    padding:28px 26px;
+    background:#f3f4f4;
+    border:1px solid #e9eaea;
+    border-radius:2px;
+    padding:38px 22px 38px;
     font-weight:700;
-    font-size:20px;
-    color:#333;
-    margin:50px 0 60px 0;
+    font-size:18px;
+    color:#111;
+    margin:60px 0 80px 0;
   }
 
   h2{
-    font-size:32px;
-    font-weight:700;
-    color:#333;
-    margin:0 0 10px 0;
+    font-size:30px;
+    font-weight:800;
+    color:#1a1a1a;
+    margin:0 0 12px 0;
   }
 
   .meta{
-    font-family:'Lora',Georgia,serif;
-    font-style:italic;
-    font-size:17px;
-    color:#777;
+    font-family:'Lora',Georgia,'Times New Roman',serif;
+    font-style:normal;
+    font-size:16px;
+    color:#999;
     margin:0 0 14px 0;
     display:flex;
     align-items:center;
     gap:6px;
   }
-  .meta svg{width:16px;height:16px;fill:#777;flex:none}
+  .meta svg{width:14px;height:14px;fill:#888;flex:none}
 
   .desc{
-    font-size:18px;
+    font-size:16px;
     font-weight:400;
-    color:#555;
-    margin-bottom:14px;
+    color:#777;
+    margin-bottom:10px;
     line-height:1.5;
   }
 
   .footer-line{
-    font-size:16px;
-    color:#aaa;
     display:flex;
     justify-content:space-between;
-    align-items:center;
+    align-items:flex-start;
+    font-size:14px;
+    color:#ccc;
   }
-  .footer-line a{
-    color:#2196f3;
+  .tags{margin-top:16px}
+  .tags a{
+    color:#9fc3e0;
     text-decoration:none;
     margin-left:14px;
   }
-  .more{color:#333;font-weight:700;font-size:16px}
+  .more{
+    color:#222;
+    font-weight:700;
+    font-size:16px;
+    margin-top:0;
+  }
+
+  footer{
+    text-align:center;
+    font-size:14px;
+    color:#bbb;
+    margin-top:120px;
+  }
 </style>
 </head>
 <body>
-
-<div class="topbar"></div>
 
 <div class="container">
   <h1>DevOps Blog</h1>
@@ -111,18 +115,20 @@
   <div class="meta">
     <!-- ikon kalender (solid) -->
     <svg viewBox="0 0 448 512"><path d="M128 0c17.7 0 32 14.3 32 32v32h128V32c0-17.7 14.3-32 32-32s32 14.3 32 32v32h48c26.5 0 48 21.5 48 48v48H0v-48c0-26.5 21.5-48 48-48h48V32c0-17.7 14.3-32 32-32zM0 192h448v272c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192z"/></svg>
-    Posted on February 1, 2019 |
+    <span>Posted on February 1, 2019 |</span>
     <!-- ikon user (solid) -->
     <svg viewBox="0 0 448 512"><path d="M224 256a128 128 0 1 0 0-256 128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3 0 498.7 13.3 512 29.7 512h388.6c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304h-91.4z"/></svg>
-    Onur Yilmaz
+    <span>Onur Yilmaz</span>
   </div>
 
   <div class="desc">First application on Kubernetes using Kubernetes deployments</div>
 
   <div class="footer-line">
-    <div>Tags: <a>#kubernetes</a> <a>#code</a></div>
+    <div class="tags">Tags: <a>#kubernetes</a> <a>#code</a></div>
     <div class="more">[Read More]</div>
   </div>
+
+  <footer>Onur Yilmaz &bull; &copy; 2019 &bull; DevOps Blog</footer>
 </div>
 
 </body>

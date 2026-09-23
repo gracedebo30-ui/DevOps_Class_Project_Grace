@@ -27,10 +27,14 @@
     margin:20px 0 0 0;
     line-height:1.2;
   }
-  /* garis bawah hanya di huruf "ps" */
-  h1 span{
-    border-bottom:4px solid #111;
-    padding:0 2px 2px;
+  /* garis pendek di tengah bawah judul */
+  h1::after{
+    content:"";
+    display:block;
+    width:80px;
+    height:4px;
+    background:#111;
+    margin:6px auto 0;
   }
 
   .box{
@@ -102,7 +106,7 @@
 <body>
 
 <div class="container">
-  <h1>DevO<span>ps</span> Blog</h1>
+  <h1>DevOps Blog</h1>
 
   <div class="box">Start DevOps journey now!</div>
 
@@ -129,5 +133,3 @@
 
 </body>
 </html>
-
- 

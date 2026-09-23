@@ -1,0 +1,20 @@
+name: Super-Linter
+on: [push]
+
+jobs:
+  super-lint:
+    name: Lint code base
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run Super-Linter
+        uses: github/super-linter@v5
+        env:
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FILTER_REGEX_EXCLUDE: (.*node_modules.*|.*vendor.*|.*bootstrap.*|.*dist.*|.*gh-pages.*)
+          VALIDATE_ALL_CODEBASE: false
+          VALIDATE_CSS: false
+          VALIDATE_JAVASCRIPT_STANDARD: false

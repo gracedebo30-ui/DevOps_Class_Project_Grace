@@ -4,32 +4,32 @@
 <meta charset="UTF-8">
 <title>DevOps Blog</title>
 <style>
-body { font-family: 'Open Sans', Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; color: #333; }
-h1 { text-align: center; font-size: 44px; font-weight: 800; margin: 40px 0 10px 0; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 8px; }
-.quote { background: #f5f5f5; padding: 12px 18px; margin: 30px 0; font-weight: bold; font-size: 14px; }
-.post-title { font-size: 20px; font-weight: bold; margin-top: 25px; }
-.meta { font-size: 13px; color: #666; margin: 8px 0; }
-.readmore { float: right; font-size: 13px; font-weight: bold; }
-.tags { font-size: 12px; color: #999; }
-.footer { background: #f5f5f5; text-align: center; padding: 25px; margin-top: 60px; font-size: 12px; color: #777; line-height: 1.8; }
-a { color: #333; text-decoration: none; }
+body { margin:0; font-family: 'Open Sans', Helvetica, Arial, sans-serif; color:#404040; }
+.navbar { background:#f5f5f5; padding:12px 20px; font-size:14px; font-weight:700; color:#333; }
+.container { max-width:700px; margin:0 auto; padding:20px; }
+h1 { text-align:center; font-size:52px; font-weight:800; margin:50px 0 0 0; color:#333; }
+.underline { width:70px; height:3px; background:#333; margin:12px auto 40px auto; opacity:0.6; }
+.quote { background:#f8f8f8; border:1px solid #eee; border-radius:3px; padding:22px 25px; font-weight:800; font-size:16px; margin-bottom:40px; }
+h2 { font-size:26px; font-weight:800; margin:0 0 8px 0; color:#333; }
+.meta { font-size:14px; color:#777; margin-bottom:10px; }
+.desc { font-size:15px; margin-bottom:8px; }
+.tags { font-size:13px; color:#999; }
+.tags span { color:#0085A1; margin-right:10px; }
+.readmore { float:right; font-weight:700; font-size:14px; color:#404040; }
+a { text-decoration:none; color:#404040; }
 </style>
 </head>
 <body>
-
+<div class="navbar">DevOps Blog</div>
+<div class="container">
 <h1>DevOps Blog</h1>
-
+<div class="underline"></div>
 <div class="quote">Start DevOps journey now!</div>
 
-<div class="post-title">First Kubernetes Deployment</div>
-<div class="meta">📅 Posted on February 1, 2019 | ✍️ Onur Yilmaz</div>
-<div>First application on Kubernetes using Kubernetes deployments</div>
-<div class="tags">Tags: #kubernetes #code <span class="readmore">[Read More]</span></div>
-
-<div class="footer">
-Onur Yilmaz - © 2019 - DevOps Blog<br>
-Hugo v0.53.0 DEV powered • Theme by Beautiful Jekyll adapted to Beautiful Hugo
+<h2>First Kubernetes Deployment</h2>
+<div class="meta">📅 Posted on February 1, 2019 | 👤 Onur Yilmaz</div>
+<div class="desc">First application on Kubernetes using Kubernetes deployments</div>
+<div class="tags">Tags: <span>#kubernetes</span> <span>#code</span> <span class="readmore">[Read More]</span></div>
 </div>
-
 </body>
 </html>
